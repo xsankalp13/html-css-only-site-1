@@ -39,6 +39,48 @@ a{
 }
 /* utilities */
 
+.flex{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+.hover-links{
+    color: var(--primary-text-color);
+    transition: color 0.3s ease-in-out;
+}
+.hover-links:hover{
+    color: var(--accent-color);
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    color: white !important;
+    font-weight: 700;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+.secondary-button{
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 0.5px solid var(--secondary-text-color);
+    color: var(--primary-text-color) !important;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    
+    color: var(--accent-color) !important;
+}
+
+
+
 
 .small-bold-text{
     font-weight: 700;
@@ -55,6 +97,7 @@ a{
     background-image: url(./assets/asset\ 32.png);
     background-color: rgb(255, 59, 92);
     background-size: 300px;
+    
 }
 
 
@@ -62,4 +105,82 @@ a{
     color: white;
     padding: 15px 30px;
     text-align: center;
+}
+.main-nav{
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis: 730px;
+}
+
+.nav-links ul{
+    justify-content: end;
+
+    gap: 40px;
+}
+
+
+header{
+    padding: 50px var(--padding-inline-section);
+
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    max-width: 40vw;
+    
+
+}
+.get-started-button{
+    margin-top: 20px;
+}
+
+.header-left h1{
+    margin-top: 20px;
+}
+
+
+.header-right img{
+    width: 600px;
+}
+
+/* company section */
+
+.company-header{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+
+.logos{
+    justify-content: space-between;
+}
+
+.logo{
+    height: 46px;
+
+}
+
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa
+}
+
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:20px;
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
 }
